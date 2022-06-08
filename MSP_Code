@@ -23,7 +23,7 @@ struct Graph
     // Function to find MST 
     int kruskalMST();
 };
-// To represent Disjoint Sets
+
 struct DisjointSets
 {
     int *parent, *rnk;
