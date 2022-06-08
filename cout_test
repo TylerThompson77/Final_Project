@@ -1,0 +1,8 @@
+#include <iostream>
+
+//Test for cout
+int main() {
+    std::cout << "cout working?" << std::endl;
+
+    return 0;
+}
