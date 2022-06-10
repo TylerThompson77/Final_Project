@@ -1,5 +1,5 @@
 #include <iostream>
-#include "edge.h"
+#include "edge.g"
 using std::cout;
 using std::endl;
 int main() {
