@@ -3,26 +3,27 @@ using namespace std;
 # define INF 0x3f3f3f3f
  
 // This class represents a directed graph using
-// adjacency list representation
+// adjacency list representation. Probably the easiest way to 
+//accomplish my shortest path code.
 class Graph
 {
-    //Number of verticies
+    //This will store our nodes that we have in our graph
     int V;   
- 
-  
+    //Storage of our nodes
     list< pair<int, int> > *adj;
  
+//Difines that graph and addedge are accessable from any functions
 public:
-    Graph(int V);  // Constructor
+    Graph(int V);  
  
-    // function to add an edge to graph
+// function to add an edge to graph
     void addEdge(int u, int v, int w);
  
-    // prints shortest path from s
+// prints shortest path from s
     void shortestPath(int s);
 };
  
-
+//Graph Class
 Graph::Graph(int V)
 {
     this->V = V;
@@ -34,8 +35,10 @@ void Graph::addEdge(int u, int v, int w)
     adj[u].push_back(make_pair(v, w));
     adj[v].push_back(make_pair(u, w));
 }
- 
-// Prints shortest paths from src to all other vertices
+
+
+// This is what makes the shortest path work. I had to use some
+//Online help to get this working
 void Graph::shortestPath(int src)
 {
    
@@ -72,29 +75,23 @@ void Graph::shortestPath(int src)
         }
     }
  
-    // Print shortest distances stored in dist[]
+// Print shortest distances stored in dist[]
     printf("Vertex   Distance from Source\n");
     for (int i = 0; i < V; ++i)
         printf("%d \t\t %d\n", i, dist[i]);
 }
  
-// Driver program to test methods of graph class
+//Program to test the graph and create it's paths
 int main()
 {
-    // create the graph given in above figure
+    
+//Defines how many nodes are allowed
     int V = 9;
     Graph g(V);
  
-   //Addisng Nodes
-    g.addnode(0);
-    g.addnode(1);
-    g.addnode(2);
-    g.addnode(3);
-    g.addnode(4);
-    g.addnode(5);
-    g.addnode(6);
-    g.addnode(7);
-    //Adding the Edges
+  
+//Adding the Edges. I wanted to make them user input but was 
+//struggling to make it work
     g.addEdge(0, 1, 4);
     g.addEdge(0, 7, 8);
     g.addEdge(1, 2, 8);
