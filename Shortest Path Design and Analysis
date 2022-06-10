@@ -1,0 +1,19 @@
+The shortest path algorithm is used when you have a start point 
+and want to find the shortest path to another node. You do not have to go to every 
+node. It takes the weight of each path option and calculates what 
+the lightest weight path would be.
+
+Design Ideas:
+    -Graph Class
+        -Probably use an adjancy list(I think the easiest way)
+    -Add Node Function
+    -Add Edge Function
+    -Shortest Path Calculation
+        -Take the Start and Ending node and find the cheapest path
+
+
+Result:
+The Shortest path seemed to be much tougher then I had hoped. Your videos did help
+but I had to definitley use some online help to make it work. I tried hard to 
+incorporate an add node function but I just don't know why it wouldn't work like
+my addedge function did. 
