@@ -1,0 +1,18 @@
+Minimal Spanning Tree or also known as Kruskal's algorithm. This algorith is 
+much different then the shortest path algorithm. MST allow you to start at any node. 
+It then analyzes the shortest path to each node. You have to visit each 
+node. In math class we called it the traveling sales man problem. You have to
+find a way to visit each house in the shortest amount of walking.
+
+Design Ideas:
+    - Add edge fuinction
+    - Add node fuinction
+    - Calculate the MSP
+    - Show the user which nodes were visited 
+    - Show the weight of the MST
+
+Analysis:
+Just like the shortest path algorithm the MST proved to be just as difficult.
+I tried to not use online help but it was inevitable. I was able to use the add 
+edge function but when I tried to incorporate the add node function it just 
+would never work. 
